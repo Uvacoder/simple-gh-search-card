@@ -1,4 +1,4 @@
-import { getGithubUser } from "../api/githubAPI";
+import { getGithubUser } from "~/api";
 
 export const fetchUser = async (user) => {
   const response = await getGithubUser(user);

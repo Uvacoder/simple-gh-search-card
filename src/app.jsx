@@ -1,22 +1,15 @@
 import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
-import { useThemes } from "./hooks/useThemes";
-import { UserContext } from "./context/userContext";
-import { darkTheme, lightTheme } from "./styles/theme";
-import { GlobalStyle } from "./styles/global-style";
-import { Header } from "./components/header";
-import { SearchBar } from "./components/search-bar";
-import { UserCard } from "./components/user-card";
+import { useThemes } from "~/hooks";
+import { UserContext } from "~/context";
+import { GlobalStyle, darkTheme, lightTheme } from "~/styles";
+import { Header, SearchBar, UserCard } from "~/components";
 
 export const App = () => {
-  const [theme, switchTheme, componentMounted] = useThemes();
+  const [theme, switchTheme] = useThemes();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
   const [user, setUser] = useState({});
-
-  if (!componentMounted) {
-    return <div />;
-  }
 
   return (
     <StyledApp>
