@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function ThemeToggle() {
+export const ThemeToggle = () => {
   return <StyledThemeToggle></StyledThemeToggle>;
 }
 

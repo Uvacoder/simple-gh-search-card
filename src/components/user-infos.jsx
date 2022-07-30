@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function UserInfos() {
+export const UserInfos = () => {
   return <StyledUserInfos></StyledUserInfos>;
 }
 

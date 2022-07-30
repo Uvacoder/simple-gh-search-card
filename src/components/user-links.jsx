@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function UserLinks() {
+export const UserLinks = () => {
   return <StyledUserLinks></StyledUserLinks>;
 }
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function UserCard() {
+export const UserCard = () => {
   return <StyledUserCard></StyledUserCard>;
 }
 

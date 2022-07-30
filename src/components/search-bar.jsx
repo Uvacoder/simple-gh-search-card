@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function SearchBar() {
+export const SearchBar = () => {
   return <StyledSearchBar></StyledSearchBar>;
 }
 
