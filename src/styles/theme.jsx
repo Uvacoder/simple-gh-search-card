@@ -1,11 +1,11 @@
-export const darkTheme = {
+export const lightTheme = {
   background: {
-    primary: "#F6F8FF",
-    secondary: "#FEFEFE",
+    primary: "#141D2F",
+    secondary: "#1E2A47",
   },
 
   foreground: {
-    primary: "#222731",
+    primary: "#FFFFFF",
     secondary: "#0079FF",
   },
 
@@ -15,14 +15,14 @@ export const darkTheme = {
   },
 };
 
-export const lightTheme = {
+export const darkTheme = {
   background: {
-    primary: "#141D2F",
-    secondary: "#1E2A47",
+    primary: "#F6F8FF",
+    secondary: "#FEFEFE",
   },
 
   foreground: {
-    primary: "#FFFFFF",
+    primary: "#222731",
     secondary: "#0079FF",
   },
 

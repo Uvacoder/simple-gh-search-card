@@ -19,10 +19,11 @@ export const useThemes = () => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme");
+
     if (localTheme) {
       setTheme(localTheme);
     } else {
-      setMode("dark");
+      setMode("light");
     }
     setComponentMounted(true);
   }, []);
