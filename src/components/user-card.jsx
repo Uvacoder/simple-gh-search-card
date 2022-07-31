@@ -39,16 +39,16 @@ export const UserCard = () => {
         </Bio>
         <Stats>
           <StatsItem>
-            <h3>Repos</h3>
-            <h4>{user.public_repos}</h4>
+            <h2>Repos</h2>
+            <h3>{user.public_repos}</h3>
           </StatsItem>
           <StatsItem>
-            <h3>Followers</h3>
-            <h4>{user.followers}</h4>
+            <h2>Followers</h2>
+            <h3>{user.followers}</h3>
           </StatsItem>
           <StatsItem>
-            <h3>Following</h3>
-            <h4>{user.following}</h4>
+            <h2>Following</h2>
+            <h3>{user.following}</h3>
           </StatsItem>
         </Stats>
         <Details>
@@ -229,13 +229,13 @@ const StatsItem = styled.div`
   flex-direction: column;
   gap: 0.1rem;
 
-  h3 {
+  h2 {
     font-size: 1.3rem;
     line-height: 1.9rem;
     color: ${({ theme }) => theme.txtPrimary};
   }
 
-  h4 {
+  h3 {
     font-weight: 700;
     font-size: 2.2rem;
     line-height: 3.3rem;
