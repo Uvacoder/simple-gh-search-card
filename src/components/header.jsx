@@ -1,51 +1,62 @@
-import styled from "styled-components";
-import { Icon } from "~/components";
+import styled from "styled-components"
+import { Icon } from "~/components"
 
 export const Header = ({ onClick, theme }) => {
   return (
     <StyledHeader>
-      <h1>Devfinder</h1>
+      <Logo href="/">Devfinder</Logo>
       <Button onClick={onClick}>
-        <h4>{theme === "dark" ? "dark" : "light"}</h4>
+        <span>{theme === "dark" ? "dark" : "light"}</span>
         <Icon iconName={theme === "dark" ? "moon" : "sun"} />
       </Button>
     </StyledHeader>
-  );
-};
+  )
+}
 
 const StyledHeader = styled.header`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
+  margin-bottom: 3.6rem;
+`
+
+const Logo = styled.a`
+  color: ${({ theme }) => theme.logo};
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+`
 
 const Button = styled.button`
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  border: none;
-  color: ${({ theme }) => theme.foreground.primary};
+  color: ${({ theme }) => theme.toggle};
   background-color: transparent;
-  text-transform: uppercase;
+  border: none;
   cursor: pointer;
   transition: all 200ms linear;
 
   &:hover {
-    color: ${({ theme }) => `${theme.foreground.primary}B3`};
-
-    svg {
-      fill: ${({ theme }) => `${theme.foreground.primary}B3`};
-    }
+    color: ${({ theme }) => theme.toggleHover};
   }
 
-  h4 {
+  span {
+    font-size: 1.3rem;
+    line-height: 1.9rem;
     letter-spacing: 0.25rem;
+    text-transform: uppercase;
   }
 
   svg {
     width: 2rem;
     height: 2rem;
-    fill: ${({ theme }) => theme.foreground.primary};
-    transition: all 200ms linear;
   }
-`;
+`

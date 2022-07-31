@@ -1,33 +1,32 @@
 export const lightTheme = {
-  background: {
-    primary: "#141D2F",
-    secondary: "#1E2A47",
-  },
-
-  foreground: {
-    primary: "#FFFFFF",
-    secondary: "#0079FF",
-  },
-
-  button: {
-    background: "#0079FF",
-    foreground: "#FFFFFF",
-  },
-};
+  txtBase: "#4B6A9B",
+  txtDate: "#697C9A",
+  txtBold: "#222731",
+  txtHighlight: "#0079FF",
+  bgPrimary: "#F6F8FF",
+  bgSecondary: "#FEFEFE",
+  buttonBg: "#0079FF",
+  buttonBgHover: "#60ABFF",
+  buttonFg: "#FFFFFF",
+  errorFg: "#F74646",
+  toggle: "#4B6A9B",
+  toggleHover: "#222731",
+  logo: "#222731",
+  dropShadow: "0 1.6rem 3rem -1rem rgba(70, 96, 187, 0.2)"
+}
 
 export const darkTheme = {
-  background: {
-    primary: "#F6F8FF",
-    secondary: "#FEFEFE",
-  },
-
-  foreground: {
-    primary: "#222731",
-    secondary: "#0079FF",
-  },
-
-  button: {
-    background: "#0079FF",
-    foreground: "#FFFFFF",
-  },
-};
+  txtBase: "#FFFFFF",
+  txtDate: "#FFFFFF",
+  txtBold: "#FFFFFF",
+  txtHighlight: "#0079FF",
+  bgPrimary: "#141D2F",
+  bgSecondary: "#1E2A47",
+  buttonBg: "#0079FF",
+  buttonBgHover: "#60ABFF",
+  buttonFg: "#FFFFFF",
+  errorFg: "#F74646",
+  toggle: "#FFFFFF",
+  toggleHover: "#90A4D4",
+  logo: "#FFFFFF",
+}

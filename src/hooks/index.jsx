@@ -1,1 +1,1 @@
-export * from "~/hooks/use-themes";
+export * from "~/hooks/use-themes"

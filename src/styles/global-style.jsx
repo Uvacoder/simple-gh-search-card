@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -30,34 +30,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    color: ${({ theme }) => theme.foreground.primary};
-    background: ${({ theme }) => theme.background.primary};
+    color: ${({ theme }) => theme.txtBase};
+    background: ${({ theme }) => theme.bgPrimary};
     font-family: var(--font-family);
-    font-size: 1.5rem;
-    line-height: 2.5rem;
     font-weight: 400;
     transition: all 200ms linear;
   }
 
-  h1 {
-    font-size: 2.6rem;
-    line-height: 3.9rem;
-    font-weight: 700;
+  svg {
+    fill: currentColor;
   }
-
-  h2 {
-    font-size: 2.2rem;
-    line-height: 3.3rem;
-    font-weight: 700;
-  }
-
-  h3 {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-
-  h4 {
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-`;
+`

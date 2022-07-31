@@ -1,2 +1,2 @@
-export * from "~/styles/global-style";
-export * from "~/styles/theme";
+export * from "~/styles/global-style"
+export * from "~/styles/theme"
