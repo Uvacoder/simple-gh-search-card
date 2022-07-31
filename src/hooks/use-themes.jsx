@@ -22,7 +22,7 @@ export const useThemes = () => {
     if (localTheme) {
       setTheme(localTheme)
     } else {
-      setMode("light")
+      setMode("dark")
     }
   }, [])
 
