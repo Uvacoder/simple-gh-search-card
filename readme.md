@@ -55,4 +55,4 @@ Your users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@alexperronnet](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@alexperronnet](https://www.frontendmentor.io/profile/alexperronnet)
