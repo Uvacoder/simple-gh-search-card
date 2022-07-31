@@ -6,8 +6,8 @@ export const Header = ({ onClick, theme }) => {
     <StyledHeader>
       <Logo href="/">Devfinder</Logo>
       <Button onClick={onClick}>
-        <span>{theme === "dark" ? "dark" : "light"}</span>
-        <Icon iconName={theme === "dark" ? "moon" : "sun"} />
+        <span>{theme === "light" ? "dark" : "light"}</span>
+        <Icon iconName={theme === "light" ? "moon" : "sun"} />
       </Button>
     </StyledHeader>
   )

@@ -30,5 +30,12 @@ export const App = () => {
 const StyledApp = styled.main`
   max-width: 73rem;
   width: calc(100% - 2.4rem);
-  margin: 3.1rem 0;
+
+  @media screen and (max-width: 768px) {
+    width: calc(100% - 10rem);
+  }
+
+  @media screen and (max-width: 512px) {
+    width: calc(100% - 4rem);
+  }
 `

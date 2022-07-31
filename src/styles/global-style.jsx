@@ -23,10 +23,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin-top: 14.4rem;
+    margin-bottom: 14.4rem;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 14rem;
+      margin-bottom: 14rem;
+    }
+
+    @media screen and (max-width: 512px) {
+      margin-top: 3.1rem;
+      margin-bottom: 3.1rem;
+    }
   }
 
   body {
