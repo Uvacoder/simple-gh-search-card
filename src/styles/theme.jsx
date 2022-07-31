@@ -28,5 +28,5 @@ export const darkTheme = {
   errorFg: "#F74646",
   toggle: "#FFFFFF",
   toggleHover: "#90A4D4",
-  logo: "#FFFFFF",
+  logo: "#FFFFFF"
 }

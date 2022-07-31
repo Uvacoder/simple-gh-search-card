@@ -30,4 +30,5 @@ export const App = () => {
 const StyledApp = styled.main`
   max-width: 73rem;
   width: calc(100% - 2.4rem);
+  margin: 3.1rem 0;
 `

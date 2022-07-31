@@ -54,13 +54,13 @@ export const SearchBar = () => {
 const StyledSearchBar = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 2.4rem;
   background-color: ${({ theme }) => theme.bgSecondary};
   border-radius: 1.5rem;
   box-shadow: ${({ theme }) => theme.dropShadow};
 
   &:focus-within {
     outline: 0.2rem solid ${({ theme }) => theme.txtHighlight};
-    outline-offset: 0.4rem;
   }
 `
 
@@ -72,6 +72,10 @@ const Label = styled.label`
     width: 2.4rem;
     height: 2.4rem;
     fill: ${({ theme }) => theme.txtHighlight};
+  }
+
+  @media screen and (max-width: 512px) {
+    margin-left: 1.6rem;
   }
 `
 
@@ -100,6 +104,11 @@ const Input = styled.input`
   &::-webkit-search-cancel-button {
     display: none;
   }
+
+  @media screen and (max-width: 512px) {
+    font-size: 1.3rem;
+    margin-inline: 1.6rem;
+  }
 `
 
 const Button = styled.button`
@@ -119,6 +128,13 @@ const Button = styled.button`
   &:hover {
     background-color: ${({ theme }) => theme.buttonBgHover};
   }
+
+  @media screen and (max-width: 512px) {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    padding-inline: 1.6rem;
+    margin: 0.7rem;
+  }
 `
 
 const NoResults = styled.span`
@@ -127,4 +143,10 @@ const NoResults = styled.span`
   color: ${({ theme }) => theme.errorFg};
   font-size: 1.5rem;
   line-height: 2.2rem;
+
+  @media screen and (max-width: 512px) {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-right: 1.6rem;
+  }
 `
