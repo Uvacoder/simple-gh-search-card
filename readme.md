@@ -56,3 +56,4 @@ Your users should be able to:
 ## Author
 
 - Frontend Mentor - [@alexperronnet](https://www.frontendmentor.io/profile/alexperronnet)
+- Website - [alexperronnet.dev](https://alexperronnet.dev)
